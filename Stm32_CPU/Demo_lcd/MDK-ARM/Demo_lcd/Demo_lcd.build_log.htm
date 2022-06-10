@@ -1,0 +1,115 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Zoro Zoro, Zoro, LIC=NQQMA-131F1-RARDM-XAIGS-K5DIL-EZTCU
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TARMCM1.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\lvcuo\Documents\Stm32\Stm32_CPU\Demo_lcd\MDK-ARM\Demo_lcd.uvprojx
+Project File Date:  03/18/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Demo_lcd'
+assembling startup_stm32l052xx.s...
+compiling stm32l0xx_hal_tim_ex.c...
+compiling main.c...
+../Src/main.c(67): warning:  #188-D: enumerated type mixed with another type
+  		EN_ON;
+../Src/main.c(69): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4,(d&0x10)>>4);
+../Src/main.c(70): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5,(d&0x20)>>5);
+../Src/main.c(71): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6,(d&0x40)>>6);
+../Src/main.c(72): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7,(d&0x80)>>7);
+../Src/main.c(73): warning:  #188-D: enumerated type mixed with another type
+  		EN_OFF;
+../Src/main.c(75): warning:  #188-D: enumerated type mixed with another type
+  		EN_ON;
+../Src/main.c(76): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4,(d&0x01)>>0);
+../Src/main.c(77): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5,(d&0x02)>>1);
+../Src/main.c(78): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6,(d&0x04)>>2);
+../Src/main.c(79): warning:  #188-D: enumerated type mixed with another type
+  		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7,(d&0x08)>>3);
+../Src/main.c(80): warning:  #188-D: enumerated type mixed with another type
+  		EN_OFF;
+../Src/main.c(85): warning:  #188-D: enumerated type mixed with another type
+  		RW_OFF;
+../Src/main.c(86): warning:  #188-D: enumerated type mixed with another type
+  		RS_ON;
+../Src/main.c(92): warning:  #188-D: enumerated type mixed with another type
+  		RS_OFF;
+../Src/main.c(93): warning:  #188-D: enumerated type mixed with another type
+  		RW_OFF;
+../Src/main.c(156): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(&m[0]," STM32L052K6T6" );
+../Src/main.c(156): error:  #20: identifier "m" is undefined
+  		sprintf(&m[0]," STM32L052K6T6" );
+../Src/main.c: 17 warnings, 1 error
+compiling stm32l0xx_it.c...
+compiling stm32l0xx_hal_i2c_ex.c...
+compiling stm32l0xx_hal_tim.c...
+compiling stm32l0xx_hal.c...
+compiling stm32l0xx_hal_msp.c...
+compiling stm32l0xx_hal_i2c.c...
+compiling stm32l0xx_hal_dma.c...
+compiling stm32l0xx_hal_gpio.c...
+compiling stm32l0xx_hal_flash_ex.c...
+compiling stm32l0xx_hal_flash_ramfunc.c...
+compiling stm32l0xx_hal_rcc_ex.c...
+compiling stm32l0xx_hal_flash.c...
+compiling stm32l0xx_hal_rcc.c...
+compiling stm32l0xx_hal_pwr.c...
+compiling system_stm32l0xx.c...
+compiling stm32l0xx_hal_pwr_ex.c...
+compiling stm32l0xx_hal_cortex.c...
+compiling stm32l0xx_hal_exti.c...
+"Demo_lcd\Demo_lcd.axf" - 1 Error(s), 17 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32L0xx_DFP.2.2.0.pack
+                Keil.STM32L0xx_DFP.2.2.0
+                STMicroelectronics STM32L0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Demo_lcd
+  C:\Users\lvcuo\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\lvcuo\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+Target not created.
+Build Time Elapsed:  00:00:10
+</pre>
+</body>
+</html>
